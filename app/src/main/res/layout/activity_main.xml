@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblHeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Your height: "
+        android:padding="10dp"
+        android:layout_marginTop="79dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-71dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/lblHeight"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblCentimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(in centimeters)"
+        android:layout_below="@+id/txtHeight"
+        android:layout_alignRight="@+id/txtHeight"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblWeight"
+        android:text="Your Weight: "
+        android:layout_below="@+id/lblCentimeter"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblCentimeter"
+        android:layout_marginLeft="-71dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@+id/lblWeight"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblKilogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(in kilograms)"
+        android:layout_below="@+id/txtWeight"
+        android:layout_alignRight="@+id/txtWeight"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblKilogram"
+        android:layout_centerInParent="true"
+        android:text="Calculate BMI"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:text="Your BMI : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblBMI"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/txtBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/lblBMI"
+        android:textSize="20sp"/>
+</RelativeLayout>
